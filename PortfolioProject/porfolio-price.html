@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-logo.png" type="image/x-icon">
+    <title>Portfolio - Francine Price</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="#home"><img src="images/portfolio-logo.png" alt="Portfolio logo that has the letters F P in the center, and branches with the name Francine Price around the border"></a></div>
+        <ul class="nav-links">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#contact">Contact</a></li> 
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="#home"><img src="images/portfolio-logo.png" alt="Portfolio logo that has the letters F P in the center, and branches with the name Francine Price around the border"></a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>           
+    </nav>
+    <section class="home" id="home">
+        <div class="section_text">
+            <h1>FRANCINE PRICE</h1> 
+            <h3>WEB <span class="multitext">DEVELOPER</span></h3>
+        </div>        
+        <div id="social-container">
+            <div class="social-button">
+                <a href="https://www.linkedin.com/in/francine-price-439734203/" target="_blank">
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <span>LinkedIn</span>
+                </a>                                              
+            </div> 
+            <div class="social-button">
+                <a href="https://github.com/fsprice" target="_blank">
+                    <div class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <span>GitHub</span> 
+                </a>                                              
+            </div>
+            <div class="social-button">
+                <a href="https://francinepriceportfolio.wordpress.com/" target="_blank">
+                    <div class="icon">
+                        <i class="fa-brands fa-wordpress-simple"></i>
+                    </div>
+                    <span>My Blog</span> 
+                </a>                                              
+            </div>                         
+        </div>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/profile-picture.jpg" alt="Profile picture of Francine Price">
+        </div>
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+            <p>I am an entry-level front-end developer with a unique combination of academic and technical skills. My educational journey began with a B.A. in Spanish, complemented by a minor in linguistics. Exploring the intricacies of language and communication laid the groundwork for my subsequent pursuit of an M.A. in Spanish, specializing in Translation and Translation Studies.</p>
+            <p>Transitioning from academia to technology, I have developed a robust skill set in front-end development. I am proficient in HTML, CSS, and JavaScript, forming the foundation for creating compelling web interfaces. Leveraging frameworks such as Bootstrap and React.js, I skillfully build dynamic and user-centric digital experiences.</p>
+            <p>My passion for language seamlessly extends into the coding realm. I am motivated by the desire to design seamless, responsive, and visually captivating websites that transcend cultural boundaries. This unique fusion of linguistic insight and technical expertise enables me to make meaningful contributions to diverse projects.</p>
+            <button class="btn" onclick="window.open('./images/Resume-Francine Price-2024.pdf')">Download CV</button>
+        </div>       
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="project-heading">Latest<span>Projects</span></h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="images/beaches.jpg" alt="An image of a tropical beach with palm trees.">
+                <div class="project-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque earum incidunt molestias maxime harum ipsum aut necessitatibus recusandae aliquid, odit hic aperiam? Eaque deleniti nobis laboriosam reiciendis, repellendus accusamus.</p>
+                    <a href="https://wcet.waketech.edu/fsprice/WEB125/BootStrap-Project/topsailBeach.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                    
+                </div>                
+            </div>
+            <div class="project-box">
+                <img src="images/art-museum.jpg" alt="Image of a seated couple admiring two paintings.">
+                <div class="project-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque earum incidunt molestias maxime harum ipsum aut necessitatibus recusandae aliquid, odit hic aperiam? Eaque deleniti nobis laboriosam reiciendis, repellendus accusamus.</p>
+                    <a href="https://wcet.waketech.edu/fsprice/WEB110/Final%20Project/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>                
+            </div>
+            <div class="project-box">
+                <img src="images/hip-hop-dancer.jpg" alt="Image of a hip-hop dancer standing on one foot.">
+                <div class="project-layer">
+                    <h4>UI/UX Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque earum incidunt molestias maxime harum ipsum aut necessitatibus recusandae aliquid, odit hic aperiam? Eaque deleniti nobis laboriosam reiciendis, repellendus accusamus.</p>
+                    <a href="https://www.figma.com/proto/gLDJr5RRaMaPz5v4np5qYI/Dance-Expression---Mobile-App?type=design&node-id=37-3&t=Wbrp0PSY49PukkDe-1&scaling=scale-down&page-id=36%3A2&starting-point-node-id=37%3A3" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>                
+            </div>
+            <div class="project-box">
+                <img src="images/nc-town.jpg" alt="Image of tall buildings and city lights.">
+                <div class="project-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque earum incidunt molestias maxime harum ipsum aut necessitatibus recusandae aliquid, odit hic aperiam? Eaque deleniti nobis laboriosam reiciendis, repellendus accusamus.</p>
+                    <a href="https://wcet.waketech.edu/fsprice/WEB125/Final%20Project/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="contact-heading">Contact<span>Me</span></h2>
+        <div class="contact-container">
+            <div class="contact-text">
+                <h4>Let's Get In Touch</h4>
+                <div class="contact-list">
+                    <li><i class="fa-solid fa-paper-plane"></i> cine.pricexxxx@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 919-123-4567</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Morrisville, NC</li>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/francine-price-439734203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/fsprice" target="_blank"><i class="fa-brands fa-github"></i></a>                    
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="" placeholder="Your Name">
+                    <input type="email" placeholder="Enter Your Name" required>
+                    <input type="" placeholder="Enter Your Subject" required>
+                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                    <input type="submit" value="submit" class="send">
+                </form>
+            </div>
+        </div>        
+    </section>
+    <footer>
+        <nav>
+           <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>              
+           </div> 
+        </nav>
+        <p>Copyright &copy; 2024 Francine Price | All Rights Reserved.</p>
+    </footer>
+
+  <script src="script.js"></script> 
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+  <script>
+    var typed = new Typed(".multitext", {
+        strings: ["DEVELOPER", "DESIGNER"],
+        typeSpeed: 175, 
+        backSpeed: 175,
+        loop: true
+    })
+  </script> 
+</body>
+</html>
