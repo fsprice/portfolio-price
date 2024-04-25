@@ -18,6 +18,7 @@
         <ul class="nav-links">
            <li><a href="#home">Home</a></li>
            <li><a href="#about">About</a></li>
+           <li><a href="#services">Services</a></li>
            <li><a href="#projects">Projects</a></li>
            <li><a href="#contact">Contact</a></li> 
         </ul>
@@ -33,6 +34,7 @@
             <ul class="menu-links">
                 <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
             </ul>
@@ -70,9 +72,7 @@
             </div>                         
         </div>
         <div class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span>            
         </div>
     </section>
     <section class="about" id="about">
@@ -87,38 +87,66 @@
             <button class="btn" onclick="window.open('./images/Resume-Francine Price-2024.pdf')">Download CV</button>
         </div>       
     </section>
+    <section class="services" id="services">
+        <h2 class="services-heading">Services</h2>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fa-brands fa-react"></i>
+                <div>
+                    <h3>Web Development</h3>
+                    <p>As a front end developer, I specialize in crafting engaging user experiences through the implementation of cutting-edge web technologies. From converting designs into interactive web interfaces to ensuring seamless functionality across various devices and browsers, I am dedicated to bringing your digital vision to life.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <i class="fa-solid fa-earth-americas"></i>
+                <div>
+                    <h3>Localization</h3>
+                    <p>With expertise in localization and translation, I bridge cultural and linguistic gaps to help your content resonate with diverse audiences worldwide. From software interfaces to marketing materials, I ensure that your message maintains its authenticity and effectiveness across different languages and cultural contexts.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <i class="fa-solid fa-pen"></i>
+                <div>
+                    <h3>UX/UI Design</h3>
+                    <p>I am passionate about creating intuitive and visually stunning digital experiences that captivate users and drive engagement. From wireframing and prototyping to crafting pixel-perfect designs, I prioritize user-centricity to deliver interfaces that not only look great but also function seamlessly across various platforms and devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="projects" id="projects">
-        <h2 class="project-heading">Latest<span>Projects</span></h2>
-        <div class="project-container">
-            <div class="project-box">
-                <img src="images/beaches.jpg" alt="An image of a tropical beach with palm trees.">
-                <div class="project-layer">
-                    <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque earum incidunt molestias maxime harum ipsum aut necessitatibus recusandae aliquid, odit hic aperiam? Eaque deleniti nobis laboriosam reiciendis, repellendus accusamus.</p>
-                    <a href="https://wcet.waketech.edu/fsprice/WEB125/BootStrap-Project/topsailBeach.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                    
-                </div>                
-            </div>
-            <div class="project-box">
-                <img src="images/art-museum.jpg" alt="Image of a seated couple admiring two paintings.">
-                <div class="project-layer">
-                    <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque earum incidunt molestias maxime harum ipsum aut necessitatibus recusandae aliquid, odit hic aperiam? Eaque deleniti nobis laboriosam reiciendis, repellendus accusamus.</p>
-                    <a href="https://wcet.waketech.edu/fsprice/WEB110/Final%20Project/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>                
-            </div>
-            <div class="project-box">
-                <img src="images/hip-hop-dancer.jpg" alt="Image of a hip-hop dancer standing on one foot.">
-                <div class="project-layer">
-                    <h4>UI/UX Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque earum incidunt molestias maxime harum ipsum aut necessitatibus recusandae aliquid, odit hic aperiam? Eaque deleniti nobis laboriosam reiciendis, repellendus accusamus.</p>
-                    <a href="https://www.figma.com/proto/gLDJr5RRaMaPz5v4np5qYI/Dance-Expression---Mobile-App?type=design&node-id=37-3&t=Wbrp0PSY49PukkDe-1&scaling=scale-down&page-id=36%3A2&starting-point-node-id=37%3A3" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>                
+            <h2 class="project-heading">Latest<span>Projects</span></h2>
+            <div class="project-container">
+                <div class="project-box">
+                    <img src="images/beaches.jpg" alt="An image of a tropical beach with palm trees.">
+                    <div class="project-layer">
+                        <h4>Web Development</h4>
+                        <p>This redesigned website for a North Carolina Beach utilizes HTML, CSS, and JavaScript for its front-end development. It also integrates the Bootstrap framework for responsive design and layout structuring, enhancing the site's adaptability across different devices. Collectively it ensures a modern, visually appealing, and user-friendly experience for visitors exploring information about the NC Beach.</p>
+                        <a href="https://wcet.waketech.edu/fsprice/WEB125/BootStrap-Project/topsailBeach.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                    
+                    </div>                
+                </div>
+                <div class="project-box">
+                    <img src="images/art-museum.jpg" alt="Image of a seated couple admiring two paintings.">
+                    <div class="project-layer">
+                        <h4>Web Development</h4>
+                        <p>This website for Harmony Haven Galleries showcases "Ephemeral Elegance: A Journey Through Time in Paint," an art event merging cultural heritage and personal narratives through art. Built with HTML, CSS, and JavaScript, it offers an engaging experience. Users can select tickets, leading them to a confirmation page, enhancing their journey through the world of art.</p>
+                        <a href="https://wcet.waketech.edu/fsprice/WEB110/Final%20Project/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                
+                </div>
+                <div class="project-box">
+                    <img src="images/hip-hop-dancer.jpg" alt="Image of a hip-hop dancer standing on one foot.">
+                    <div class="project-layer">
+                        <h4>UI/UX Design</h4>
+                        <p>This high-fidelity prototype is for a mobile application designed for a dance studio. It enables users to select their preferred dance genre, book classes, and access general information about the studio and upcoming events. The prototype was crafted using Figma.</p>
+                        <a href="https://www.figma.com/proto/gLDJr5RRaMaPz5v4np5qYI/Dance-Expression---Mobile-App?type=design&node-id=37-3&t=Wbrp0PSY49PukkDe-1&scaling=scale-down&page-id=36%3A2&starting-point-node-id=37%3A3" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                
             </div>
             <div class="project-box">
                 <img src="images/nc-town.jpg" alt="Image of tall buildings and city lights.">
                 <div class="project-layer">
                     <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque earum incidunt molestias maxime harum ipsum aut necessitatibus recusandae aliquid, odit hic aperiam? Eaque deleniti nobis laboriosam reiciendis, repellendus accusamus.</p>
+                    <p>This redesigned government site for a North Carolina county, serves as an informative hub for residents and visitors. Built with HTML, CSS, and Bootstrap, it offers easy navigation and accessibility. Users can explore various sections like "About," "Public Safety," and "Payment Services," providing comprehensive information. Additionally, the site features responsive design and social media integration, enhancing user engagement and connectivity.</p>
                     <a href="https://wcet.waketech.edu/fsprice/WEB125/Final%20Project/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>                
             </div>
@@ -131,8 +159,7 @@
                 <h4>Let's Get In Touch</h4>
                 <div class="contact-list">
                     <ul>
-                        <li><i class="fa-solid fa-paper-plane"></i> cine.pricexxxx@gmail.com</li>
-                        <li><i class="fa-solid fa-phone"></i> 919-123-4567</li>
+                        <li><i class="fa-solid fa-paper-plane"></i> cine.price1997@gmail.com</li>                        
                         <li><i class="fa-solid fa-location-dot"></i> Morrisville, NC</li>
                     </ul>
                 </div>
@@ -142,12 +169,13 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Enter Your Name" required>
-                    <input type="text" placeholder="Enter Your Subject" required>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="98899d83-e7bd-4bc7-a28c-d93b8ec107de">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
                     <textarea name="message" id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-                    <input type="submit" value="submit" class="send">
+                    <input type="submit" value="Submit" class="send">
                 </form>
             </div>
         </div>        
@@ -158,6 +186,7 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li> 
                 </ul>              

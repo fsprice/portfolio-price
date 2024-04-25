@@ -273,7 +273,7 @@ a:hover::before {
 
 .arrow {
     position: absolute;
-    top: 80%;
+    top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -286,15 +286,7 @@ a:hover::before {
     border-right: 5px solid white;
     transform: rotate(45deg);
     margin: -10px;
-    animation: scroll 2s infinite;
-}
-
-.arrow span:nth-child(2) {
-    animation-delay: -.2s;    
-}
-
-.arrow span:nth-child(3) {
-    animation-delay: -.4s;    
+    animation: scroll 4s infinite;
 }
 
 @keyframes scroll {
@@ -361,17 +353,89 @@ a:hover::before {
 .btn {
     font-weight: 600;
     transition: all 300ms ease;
+    background-color: rgb(77, 234, 234);
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
-    border: rgb(133, 132, 132) 0.1rem solid;
-    box-shadow: 0 5px 15px cyan;
+    border: none;
+    box-shadow: 0 0 5px rgb(77, 234, 234);
     margin-top: 15px;
 }
 
 .btn:hover {
     cursor: pointer;
-    background:rgb(163, 161, 161);     
+    box-shadow: 0 0 15px rgb(77, 234, 234)    
+}
+
+/* Services Section */
+.services h2 {
+    margin-bottom: 3rem;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+
+#services {
+    text-align: center; 
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 50px; 
+    margin-top: 40px; 
+    margin-bottom: 75px;
+    padding: 0 20px; 
+}
+
+.card {
+    height: 385px;
+    width: 400px; 
+    background: rgb(97, 95, 95);
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.card::before {
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: rgb(77, 234, 234);
+    transform: rotate(0deg);
+    z-index: -1;
+    transition: transform 0.3s ease; 
+}
+
+.card:hover::before {
+    transform: rotate(10deg);
+}
+
+.card i {
+    color: rgb(77, 234, 234);
+    font-size: 2.5rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #fff;
+    font-size: 1.6rem;  
+    margin-bottom: 10px;
+
+}
+
+.card p {
+    color: #fff;
+    font-size: 1.03rem;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
 /* Project Section */
@@ -409,7 +473,7 @@ a:hover::before {
     width: 100%;
     transition: .5s ease; 
     opacity: 0.7;
-    filter: grayscale(100%);
+    filter: grayscale(25%);
 }
 
 .project-box:hover img {
@@ -440,14 +504,14 @@ a:hover::before {
 }
 
 .project-layer h4 {
-    margin-top: 1.5rem;
-    font-size: 2rem; 
+    margin-top: 1.0rem;
+    font-size: 1.5rem; 
     color: rgb(77, 234, 234);   
 }
 
 .project-layer p {
-    font-size: 1.0rem;
-    margin: .3rem 0 1rem;
+    font-size: 0.75rem;
+    margin: 0.5rem 0.5rem;
 }
 
 .project-layer a {
@@ -494,6 +558,7 @@ a:hover::before {
 
 .contact-text {
     padding-left: 280px;
+    margin-top: -120px;
 }
 .contact-text h4 {
     font-size: 35px;
@@ -584,6 +649,7 @@ a:hover::before {
     text-decoration: none;
     font-weight: 600;
     box-shadow: 0 0 5px rgb(77, 234, 234); 
+    width: 8rem;
 }
 
 .contact-form form .send:hover {
@@ -662,6 +728,29 @@ footer p {
         width: 125px;
     }
 
+    /* Services Section */
+    .services h2 {
+        font-size: 40px;
+    }
+    .cards-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card {
+        width: 75%; 
+        margin-bottom: 20px;
+    }
+
+    .card h3 {
+        font-size: 2.2rem;        
+    }
+    .card p {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
     /* Project Section */
     .project-container {
         display: grid;
@@ -673,6 +762,11 @@ footer p {
 
     .projects h2 {
         font-size: 40px;
+    }
+
+    .project-layer p {
+        font-size: 0.98rem;
+        
     }
 
     /* Contact Section */
@@ -701,6 +795,26 @@ footer p {
 
     .contact-text {
         padding-left: 0; 
-    }    
+        margin-top: 5px;
+        margin-bottom: 10px;
+    } 
     
+    .contact-form form .send {
+        width: 25%;
+        font-size: 1.0rem; }
+    
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 1600px) {
+    .project-layer h4 {
+        margin-top: 1.5rem;
+        font-size: 2.0rem; 
+        color: rgb(77, 234, 234);   
+    }
+    
+    .project-layer p {
+        font-size: 1.0rem;
+        margin: .3rem 0 1rem;
+    }
 }
